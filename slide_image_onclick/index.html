@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Image Slider</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<section>
+		<img src="https://cdn.pixabay.com/photo/2016/12/16/15/25/christmas-1911637_1280.jpg" id="slider">
+		<ul class="nav">
+			<li onclick="imgSlider('https://cdn.pixabay.com/photo/2016/12/16/15/25/christmas-1911637_1280.jpg')">
+		<img src="https://cdn.pixabay.com/photo/2016/12/16/15/25/christmas-1911637_1280.jpg" alt=""></li>
+			<li onclick="imgSlider('https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547_1280.jpg')">
+		<img src="https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547_1280.jpg" alt=""></li>
+			<li onclick="imgSlider('https://cdn.pixabay.com/photo/2016/12/27/21/03/lone-tree-1934897_1280.jpg')">
+		<img src="https://cdn.pixabay.com/photo/2016/12/27/21/03/lone-tree-1934897_1280.jpg" alt=""></li>
+			<li onclick="imgSlider('https://cdn.pixabay.com/photo/2015/10/30/20/13/sunrise-1014712_1280.jpg')">
+		<img src="https://cdn.pixabay.com/photo/2015/10/30/20/13/sunrise-1014712_1280.jpg" alt=""></li>
+		</ul>
+		<h2>Simple Slider</h2>
+	</section>
+
+	<script type="text/javascript">
+		function imgSlider(parameter){
+			document.getElementById("slider").src = parameter;
+		}
+	</script>
+</body>
+</html>
